@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlix</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .auth-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .hero {
+            width: 100%;
+            height: 600px;
+            background-image: url('https://via.placeholder.com/1600x600'); /* Image de fond */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .categories {
+            margin-top: 120px;
+            padding: 20px;
+        }
+        .category-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .category {
+            display: flex;
+            overflow-x: scroll;
+            gap: 15px;
+        }
+        .category img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .category img:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            padding: 20px;
+            background-color: #111;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">MovieFlix</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Films</a>
+            <a href="#">Séries</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="auth-links">
+            <a href="#">Sign Up</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>Regarder maintenant</div>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+        <!-- TOP 10 DES FILMS CETTE SEMAINE -->
+        <div class="category-section">
+            <div class="category-title">Top 10 des Films Cette Semaine</div>
+            <div class="category">
+                <img src="https://via.placeholder.com/200x300" alt="Film 1">
+                <img src="https://via.placeholder.com/200x300" alt="Film 2">
+                <img src="https://via.placeholder.com/200x300" alt="Film 3">
+                <img src="https://via.placeholder.com/200x300" alt="Film 4">
+                <img src="https://via.placeholder.com/200x300" alt="Film 5">
+            </div>
+        </div>
+
+        <!-- FILMS EN TENDANCE -->
+        <div class="category-section">
+            <div class="category-title">Films en Tendance</div>
+            <div class="category">
+                <img src="https://via.placeholder.com/200x300" alt="Film 1">
+                <img src="https://via.placeholder.com/200x300" alt="Film 2">
+                <img src="https://via.placeholder.com/200x300" alt="Film 3">
+                <img src="https://via.placeholder.com/200x300" alt="Film 4">
+                <img src="https://via.placeholder.com/200x300" alt="Film 5">
+            </div>
+        </div>
+
+        <!-- SERIE EN TENDANCE -->
+        <div class="category-section">
+            <div class="category-title">Série en Tendance</div>
+            <div class="category">
+                <img src="https://via.placeholder.com/200x300" alt="Série 1">
+                <img src="https://via.placeholder.com/200x300" alt="Série 2">
+                <img src="https://via.placeholder.com/200x300" alt="Série 3">
+                <img src="https://via.placeholder.com/200x300" alt="Série 4">
+                <img src="https://via.placeholder.com/200x300" alt="Série 5">
+            </div>
+        </div>
+
+        <!-- AUTRES CATEGORIES -->
+        <!-- Ajoutez des catégories supplémentaires selon le même format que ci-dessus -->
+        <!-- Exemple: Horreur, Animation, Comédie, etc. -->
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 MovieFlix - Tous droits réservés</p>
+    </div>
+
+</body>
+</html>
